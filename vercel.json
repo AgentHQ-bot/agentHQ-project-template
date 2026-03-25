@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
@@ -6,33 +7,13 @@
   "env": {
     "NODE_ENV": "production"
   },
-  "envPrefix": "NEXT_PUBLIC_",
   "regions": ["sfo1"],
   "functions": {
     "api/**/*.js": {
       "maxDuration": 30
     }
   },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    }
-  ],
-  "redirects": [],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    }
-  ],
   "cleanUrls": true,
   "trailingSlash": false,
-  "framework": "nextjs",
-  "public": true
+  "framework": "nextjs"
 }
