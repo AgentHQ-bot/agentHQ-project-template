@@ -1,19 +1,3 @@
 {
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- .",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "regions": ["sfo1"],
-  "functions": {
-    "api/**/*.js": {
-      "maxDuration": 30
-    }
-  },
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "framework": "nextjs"
+  "version": 2
 }
